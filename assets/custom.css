@@ -416,6 +416,76 @@ body > .w-container {
   }
 }
 
+#features .w-dyn-item:nth-child(odd),
+#pricing .collection-item:nth-child(odd),
+.data-table__body-row:nth-child(odd) {
+  background: linear-gradient(180deg, rgba(248, 251, 253, 0.9) 0%, rgba(244, 248, 251, 0.9) 100%);
+}
+
+#features .grid-7,
+#pricing .grid-9,
+.collection-item .w-layout-grid {
+  font-size: 0.96rem;
+  line-height: 1.45;
+}
+
+#features .w-dyn-item .grid-7 > div,
+#pricing .collection-item .grid-9 > div,
+.collection-item .w-layout-grid > div {
+  min-width: 0;
+}
+
+#features .w-dyn-item .grid-7 > div:first-child,
+#pricing .collection-item .grid-9 > div:first-child,
+.collection-item .w-layout-grid > div:nth-child(odd) {
+  font-weight: 700;
+}
+
+.collection-item h3 {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 14px;
+  padding: 0.35rem 0.7rem;
+  background: rgba(47, 143, 107, 0.1);
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+.collection-item .w-layout-grid {
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  column-gap: 16px;
+  row-gap: 10px;
+}
+
+.text-block-22,
+.text-block-23 {
+  line-height: 1.45;
+}
+
+.div-block-5.div-block-6 .w-container {
+  display: grid;
+  gap: 24px;
+}
+
+.image-2 {
+  max-height: 96px;
+  width: auto;
+}
+
+.w-richtext {
+  max-width: 74ch;
+}
+
+@media screen and (max-width: 991px) {
+  .div-block-18 {
+    display: none;
+  }
+
+  .div-block-19 {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .w-container {
     width: min(100%, calc(100% - 20px));
@@ -442,8 +512,13 @@ body > .w-container {
   }
 
   .grid-8,
-  .grid-15 {
+  .grid-15,
+  .div-block-18 {
     display: none;
+  }
+
+  .div-block-19 {
+    display: block;
   }
 
   .link-block,
@@ -457,6 +532,10 @@ body > .w-container {
     grid-template-columns: 1fr;
   }
 
+  .collection-item .w-layout-grid {
+    grid-template-columns: minmax(0, 1fr) auto !important;
+  }
+
   .data-table__head-row,
   .data-table__body-row {
     min-height: unset;
@@ -464,8 +543,16 @@ body > .w-container {
     padding-bottom: 12px;
   }
 
+  .div-block-5.div-block-6 .w-container {
+    padding: 20px;
+  }
+
   body > .w-container {
     margin-top: 94px;
     padding: 20px;
+  }
+
+  .w-richtext {
+    font-size: 0.98rem;
   }
 }
