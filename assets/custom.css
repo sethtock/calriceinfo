@@ -200,6 +200,22 @@ body > .w-container {
   filter: saturate(0.94) contrast(1.02);
 }
 
+.section.press .sponsor-logo {
+  position: relative;
+}
+
+.section.press .sponsor-logo-charter {
+  left: 10px;
+}
+
+.section.press .sponsor-logo-mckenzie {
+  left: 16px;
+}
+
+.section.press .sponsor-logo-sbm {
+  left: 14px;
+}
+
 #features > .w-container,
 #pricing > .w-container {
   position: relative;
@@ -563,6 +579,18 @@ body > .w-container {
     max-width: 460px;
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .section.press .sponsor-logo-charter {
+    left: 12px;
+  }
+
+  .section.press .sponsor-logo-mckenzie {
+    left: 18px;
+  }
+
+  .section.press .sponsor-logo-sbm {
+    left: 16px;
   }
 
   .collection-item .w-layout-grid {
