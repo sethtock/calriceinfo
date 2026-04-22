@@ -156,6 +156,11 @@ body > .w-container {
   flex-wrap: wrap;
 }
 
+.sponsor-grid {
+  justify-content: center;
+  align-items: stretch;
+}
+
 .link-block,
 .link-block-2 {
   min-height: 86px;
@@ -174,7 +179,18 @@ body > .w-container {
   border-color: rgba(47, 143, 107, 0.25);
 }
 
+.sponsor-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  text-align: center;
+}
+
 .logo {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
   filter: saturate(0.94) contrast(1.02);
 }
 
@@ -530,6 +546,15 @@ body > .w-container {
   .div-block {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .sponsor-grid {
+    justify-items: center;
+  }
+
+  .sponsor-card {
+    width: 100%;
+    max-width: 460px;
   }
 
   .collection-item .w-layout-grid {
